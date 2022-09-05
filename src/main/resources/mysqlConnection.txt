@@ -3,3 +3,9 @@ spring.datasource.username=root
 spring.datasource.password=2401
 
 spring.jpa.hibernate.ddl-auto=update
+
+spring.datasource.url=${jdbcurl}
+spring.datasource.username=${username}
+spring.datasource.password=${password}
+
+spring.jpa.hibernate.ddl-auto=update
