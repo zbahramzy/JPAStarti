@@ -23,6 +23,7 @@ class JpaStartiApplicationTests {
 
     @Test
     void testStudent() {
+        /*
         Student std1 = new Student();
         std1.setBorn(LocalDate.now());
         std1.setName("Kaj");
@@ -41,6 +42,7 @@ class JpaStartiApplicationTests {
             Student std3 = opt.get();
             assertEquals(std3.getName(), "Kaj");
         }
+         */
 
     }
 

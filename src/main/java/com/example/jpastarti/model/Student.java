@@ -2,6 +2,7 @@ package com.example.jpastarti.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 public class Student {
@@ -10,6 +11,7 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private LocalDate born;
+    private LocalTime bornTime;
     @Column(length = 100)
     private String name;
 
@@ -30,5 +32,11 @@ public class Student {
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public LocalTime getBornTime() {
+        return bornTime;
+    }
+    public void setBornTime(LocalTime bornTime) {
+        this.bornTime = bornTime;
     }
 }
